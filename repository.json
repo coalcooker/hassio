@@ -1,5 +1,5 @@
 {
-  "name": "ESPHome Home Assistant Add-Ons",
-  "url": "https://github.com/esphome/hassio",
-  "maintainer": "ESPHome <contact@esphome.io>"
+  "name": "ESPHome(RS485) Home Assistant Add-Ons",
+  "url": "https://github.com/coalcooker/hassio",
+  "maintainer": "coalcooker"
 }
