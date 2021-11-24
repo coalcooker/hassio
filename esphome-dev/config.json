@@ -5,8 +5,10 @@
     "aarch64"
   ],
   "auth_api": true,
-  "uart": true,
-  "description": "Development Version! Manage and program ESP8266/ESP32 microcontrollers through YAML configuration files",
+  "backup_exclude": [
+    "*/*/"
+  ],
+  "description": "Development version of ESPHome add-on",
   "hassio_api": true,
   "host_network": true,
   "ingress": true,
@@ -16,19 +18,16 @@
     "config:rw"
   ],
   "name": "ESPHome (dev)",
-  "options": {
-    "esphome_version": "dev"
-  },
   "panel_icon": "mdi:chip",
   "ports": {
     "6052/tcp": null
   },
   "ports_description": {
-    "6052/tcp": "Web interface (Not required for Home Assistant Ingress)"
+    "6052/tcp": "Web interface (not required for Home Assistant ingress)"
   },
   "schema": {
     "certfile": "str?",
-    "esphome_version": "str?",
+    "esphome_fork": "str?",
     "keyfile": "str?",
     "leave_front_door_open": "bool?",
     "relative_url": "str?",
@@ -38,6 +37,7 @@
   },
   "slug": "esphome-dev",
   "stage": "experimental",
+  "uart": true,
   "url": "https://next.esphome.io/",
   "version": "dev"
 }

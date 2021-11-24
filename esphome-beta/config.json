@@ -5,10 +5,13 @@
     "aarch64"
   ],
   "auth_api": true,
-  "description": "Beta version of ESPHome Hass.io add-on.",
+  "backup_exclude": [
+    "*/*/"
+  ],
+  "description": "Beta version of ESPHome add-on",
   "hassio_api": true,
   "host_network": true,
-  "image": "esphome/esphome-hassio-{arch}",
+  "image": "ghcr.io/esphome/esphome-hassio-{arch}",
   "ingress": true,
   "ingress_port": 0,
   "map": [
@@ -21,11 +24,10 @@
     "6052/tcp": null
   },
   "ports_description": {
-    "6052/tcp": "Web interface (Not required for Home Assistant Ingress)"
+    "6052/tcp": "Web interface (not required for Home Assistant ingress)"
   },
   "schema": {
     "certfile": "str?",
-    "esphome_version": "str?",
     "keyfile": "str?",
     "leave_front_door_open": "bool?",
     "relative_url": "str?",
@@ -37,5 +39,5 @@
   "stage": "experimental",
   "uart": true,
   "url": "https://beta.esphome.io/",
-  "version": "1.17.0b1"
+  "version": "2021.11.1"
 }
