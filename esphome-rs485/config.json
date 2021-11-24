@@ -18,7 +18,7 @@
     "ssl:ro",
     "config:rw"
   ],
-  "name": "ESPHome(RS485)",
+  "name": "ESPHome (RS485)",
   "panel_icon": "mdi:chip",
   "ports": {
     "6052/tcp": null
