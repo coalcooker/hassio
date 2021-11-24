@@ -5,30 +5,29 @@
     "aarch64"
   ],
   "auth_api": true,
-  "uart": true,
-  "description": "Stable(RS485 included) Version! Manage and program ESP8266/ESP32 microcontrollers through YAML configuration files",
+  "backup_exclude": [
+    "*/*/"
+  ],
+  "description": "ESPHome(RS485 included) add-on for intelligently managing all your ESP8266/ESP32 devices",
   "hassio_api": true,
   "host_network": true,
+  "image": "ghcr.io/esphome/esphome-hassio-{arch}",
   "ingress": true,
   "ingress_port": 0,
   "map": [
     "ssl:ro",
     "config:rw"
   ],
-  "name": "ESPHome (RS485)",
-  "options": {
-    "esphome_version": "coalcooker:master"
-  },
+  "name": "ESPHome(RS485)",
   "panel_icon": "mdi:chip",
   "ports": {
-    "6054/tcp": null
+    "6052/tcp": null
   },
   "ports_description": {
-    "6054/tcp": "Web interface (Not required for Home Assistant Ingress)"
+    "6052/tcp": "Web interface (not required for Home Assistant ingress)"
   },
   "schema": {
     "certfile": "str?",
-    "esphome_version": "str?",
     "keyfile": "str?",
     "leave_front_door_open": "bool?",
     "relative_url": "str?",
@@ -37,7 +36,7 @@
     "streamer_mode": "bool?"
   },
   "slug": "esphome-rs485",
-  "startup": "application",
+  "uart": true,
   "url": "https://esphome.io/",
-  "version": "1.16.2"
+  "version": "2021.11.1"
 }
