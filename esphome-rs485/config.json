@@ -18,6 +18,9 @@
     "config:rw"
   ],
   "name": "ESPHome (RS485)",
+  "options": {
+    "esphome_version": "coalcooker:master"
+  },
   "panel_icon": "mdi:chip",
   "ports": {
     "6052/tcp": null
