@@ -1,4 +1,4 @@
-# ESPHome Home Assistant Add-On
+# ESPHome Home Assistant Add-On (RS485 포함)
 
 [![ESPHome logo](https://raw.githubusercontent.com/esphome/hassio/master/esphome-dev/logo.png)](https://esphome.io/)
 
